@@ -1,9 +1,5 @@
 /*------------------------------------------------------------------------
-# Raising Template 1.0 - Feb 8, 2018
-# ------------------------------------------------------------------------
-# Designed & coded by Awe7
-# Websites:  http://www.awe7.com -  Email: info@awe7.com
---------------------------------------------------------------------------
+
 
 	1. base
 	2. form-item
@@ -3944,15 +3940,15 @@ ul {
 }
 
 .bg-1 {
-    background-image: url("../img/slider/1.jpg");
+    background-image: url("http://adnfitness.com.ar/img/slider/1.jpg");
 }
 
 .bg-2 {
-    background-image: url("../img/bg/faq.jpg");
+    background-image: url("http://adnfitness.com.ar/img/bg/faq.jpg");
 }
 
 .bg-portfolio {
-    background-image: url("../img/bg/portfolio.jpg");
+    background-image: url("http://adnfitness.com.ar/img/bg/portfolio.jpg");
 }
 
 .bg-color-white {
