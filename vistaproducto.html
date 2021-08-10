@@ -1,7 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html class="" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>ADN-Fitness</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -13,16 +15,18 @@
     <meta name="google" content="nopagereadaloud" />
     <meta name="google-site-verification" content="cwvmEJc2N30lE_1c-7Z4AT8Q2ogBrno7nl_yRUbwhUE" />
 
-    <link rel="stylesheet" type="text/css" href="https://adnfitness.com.ar/assets/fonts/fontawesome/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://adnfitness.com.ar/assets/fonts/pe-icon/pe-icon.css">
-    <link rel="stylesheet" type="text/css" href="https://adnfitness.com.ar/assets/vendors/bootstrap/grid.css">
-    <link rel="stylesheet" type="text/css" href="https://adnfitness.com.ar/assets/vendors/magnific-popup/magnific-popup.min.css">
-    <link rel="stylesheet" type="text/css" href="https://adnfitness.com.ar/assets/vendors/swiper/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/pe-icon/pe-icon.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/bootstrap/grid.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/swiper/swiper.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600|Playfair+Display:400i">
-    <link rel="stylesheet" type="text/css" href="https://adnfitness.com.ar/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/css/product.css" />
+
 </head>
 
 <body>
@@ -32,7 +36,6 @@
         <div class="cssload-spin-box"></div>
     </div>
     <!-- End / preload -->
-
     <div class="page-wrap">
 
         <!-- header -->
@@ -41,30 +44,15 @@
                 <div class="header__inner">
                     <div class="header-logo">
                         <a href="/">
-                            <img src="/img/logo_white.png" alt="">
+                            <img src="/img/logo_white.png" alt="" />
                         </a>
                     </div>
                     <!-- raising-nav -->
                     <nav class="raising-nav">
                         <!-- raising-navbar -->
                         <ul class="raising-menu">
-                            <li>
-                                <a href="/">ADN-FITNESS</a>
-                            </li>
-                            <li>
-                                <a href="/nosotros.html">NOSOTROS</a>
-                            </li>
-                            <li>
-                                <a href="/galeria.html">GALERIA</a>
-                            </li>
-                            <li>
-                                <a href="/tienda.html">TIENDA</a>
-                            </li>
-                            <li>
-                                <a href="/equipo.html">EQUIPO</a>
-                            </li>
-                            <li>
-                                <a href="/contacto.html">CONTACTO</a>
+                            <li th:each="item:${navbar}">
+                                <a th:href="${item.getUri()}" th:text="${item.getNombre()}"></a>
                             </li>
                         </ul>
                         <!-- raising-navbar -->
@@ -78,7 +66,7 @@
                     </div>
                     <div class="searchbar">
                         <div class="searchbar__group"><span class="searchbar__addon"><i class="fa fa-search"></i></span>
-                            <input class="searchbar__input" type="text" name="search" value="" placeholder="Search"><span class="searchbar__close"></span>
+                            <input class="searchbar__input" type="text" name="search" value="" placeholder="Search" /><span class="searchbar__close"></span>
                         </div>
                     </div>
                 </div>
@@ -86,66 +74,28 @@
         </header>
         <!-- End / header -->
 
-        <!-- Content-->
         <div class="md-content">
-            <div class="fix-header" style="height:114px"></div>
-            <!-- hero -->
-            <hero class="hero" id="id1">
-                <!-- swiper swiper-container -->
-                <div class="swiper swiper-container swiper-container-horizontal">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-slide-active" style="width: 1423px; margin-right: 30px;">
-                            <div class="hero__wrapper" style="background-image: url('/img/slider/sup.jpg');">
-                                <div class="hero__inner">
-                                    <div class="container">
-                                        <h1 class="hero__title">Suplementos Naturales</h1>
-                                        <p class="hero__desc">La suplementación que tu cuerpo necesita para lograr los resultados que estabas buscando!</p>
+            <div class="container">
+                <h1>hola</h1>
 
-                                        <!-- btn -->
-                                        <a class="btn btn-primary" href="#tienda/Suplementos">Tienda
-                                </a>
-                                        <!-- End / btn -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide swiper-slide-next" style="width: 1423px; margin-right: 30px;">
-                            <div class="hero__wrapper" style="background-image: url('/img/slider/pers.jpg');">
-                                <div class="hero__inner">
-                                    <div class="container">
-                                        <h1 class="hero__title">Personal Training</h1>
-                                        <p class="hero__desc">Entrenamiento Especializado en Fisico-Culturismo y Fitness de Competencia</p>
-                                        <!-- btn -->
-                                        <a class="btn btn-primary" href="#">Consulta</a>
-                                        <!-- End / btn -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </hero>
-            <!-- End / hero -->
-
+            </div>
         </div>
-        <!-- End / swiper swiper-container -->
-
-
         <!-- footer-01 -->
         <footer class="footer-01 md-skin-dark">
             <div class="footer-01__widget">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-3 ">
+
                             <!-- widget -->
                             <section class="widget">
+
                                 <!-- sec-title -->
                                 <div class="sec-title">
                                     <h2 class="sec-title__title">about us</h2><span class="sec-title__divider"></span>
                                 </div>
                                 <!-- End / sec-title -->
+
                                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis a rerum ratione aliquam placeat labore nemo itaque voluptas laudantium consequuntur ut quam, aperiam harum ipsam?
                                 </p>
                             </section>
@@ -166,7 +116,7 @@
 
                                 <!-- widget-tag -->
                                 <div class="widget-tag"><a href="#">Dress</a><a href="#">Mini</a><a href="#">Skate
-                                Animal</a><a href="#">Lorem Ipsum</a><a href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a href="#">Food</a><a href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a href="#">Litterature</a>
+                Animal</a><a href="#">Lorem Ipsum</a><a href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a href="#">Food</a><a href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a href="#">Litterature</a>
                                     <a href="#">Food</a>
                                 </div>
                                 <!-- End /  widget-tag -->
@@ -190,31 +140,31 @@
                                 <!-- widget-gallery -->
                                 <div class="widget-gallery">
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="./img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="./img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="./img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="./img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="./img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="./img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt="" /></a>
                                     </div>
                                     <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt=""></a>
+                                        <a href="#" style="background-image: url('/img/400x400.png');"><img src="/img/400x400.png" alt="" /></a>
                                     </div>
                                 </div>
                                 <!-- End /  widget-gallery -->
@@ -265,27 +215,26 @@
             <!-- copyright-01 -->
             <div class="copyright-01 md-text-center">
                 <div class="container">
-                    <p class="copyright-01__copy">2021 © Copyright Phoenos. All rights Reserved.</p>
+                    <p class="copyright-01__copy">2021 &copy; Copyright Phoenos. All rights Reserved.</p>
                 </div>
             </div>
             <!-- End / copyright-01 -->
-
         </footer>
         <!-- End / footer-01 -->
     </div>
     <!-- Vendors-->
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/isotope-layout/isotope.pkgd.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/masonry-layout/masonry.pkgd.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/swiper/swiper.jquery.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/jquery-one-page/jquery.nav.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/menu/menu.js"></script>
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="/assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="/assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="/assets/vendors/swiper/swiper.jquery.js"></script>
+    <script type="text/javascript" src="/assets/vendors/jquery-one-page/jquery.nav.js"></script>
+    <script type="text/javascript" src="/assets/vendors/navbar/navbar.js"></script>
+    <script type="text/javascript" src="/assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
     <!-- App-->
-    <script type="text/javascript" src="https://adnfitness.com.ar/assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 
 </html>
