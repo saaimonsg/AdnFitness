@@ -1,7 +1,6 @@
 (function($) {
     "use strict";
 
-
     /**
      * [isMobile description]
      * @type {Object}
@@ -211,10 +210,61 @@
 
     $(window).on('resize', function() {
         var ww = $(window).width();
-        console.log('khanh');
-        if (ww < 1200) {
-
+        //console.log('khanh');
+        if (ww < 285) {
+            console.log(360)
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            $("div.swiper-pagination").css('display', 'none');
+        } else
+        if (ww < 362) {
+            console.log(360)
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            $("div.swiper-pagination").css('display', 'none');
+        } else if (ww < 640) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            // $("div.swiper-container").removeClass("swiper-container-horizontal").addClass("swiper-container-vertical")
+        } else if (ww < 752) {
+            console.log(360)
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            // $("div.swiper-pagination").css('display', 'none');
         } else {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            // $("div.swiper-container").removeClass("swiper-container-vertical").addClass("swiper-container-horizontal")
             $('.page-wrap').removeClass('active');
         }
     }).trigger('resize');

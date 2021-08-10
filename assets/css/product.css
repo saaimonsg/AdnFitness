@@ -218,24 +218,24 @@
 
 @media (max-width: 1132px) {
     .wrapper {
-        width: 260px;
-        height: 500px;
-        background: rgba(43, 255, 0, 0.57);
-    }
-}
-
-@media (max-width: 992px) {
-    .wrapper {
         width: 200px;
         height: 335px;
-        background: rgba(43, 255, 0, 0.57);
+        background: white;
     }
 }
 
 @media (max-width: 768px) {
     .wrapper {
-        width: 204px;
+        width: 200px;
         height: 331px;
-        background: rgb(251, 255, 0);
+        background: white;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper {
+        width: 150px;
+        height: 210px;
+        background: white;
     }
 }
