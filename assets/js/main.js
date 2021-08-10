@@ -211,7 +211,7 @@
     $(window).on('resize', function() {
         var ww = $(window).width();
         //console.log('khanh');
-        if (ww < 285) {
+        if (ww < 375) {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 5,
@@ -222,10 +222,10 @@
             });
             $("div.swiper-pagination").css('display', 'none');
         } else
-        if (ww < 370) {
+        if (ww < 420) {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                spaceBetween: 5,
+                slidesPerView: 2,
+                spaceBetween: 1,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -254,7 +254,7 @@
             // $("div.swiper-pagination").css('display', 'none');
         } else {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
+                slidesPerView: 5,
                 spaceBetween: 5,
                 pagination: {
                     el: ".swiper-pagination",
