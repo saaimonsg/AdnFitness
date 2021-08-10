@@ -2372,7 +2372,7 @@ return Item;
   // layout mode class
   function LayoutMode( isotope ) {
     this.isotope = isotope;
-    // link properties
+    // navbar properties
     if ( isotope ) {
       this.options = isotope.options[ this.namespace ];
       this.element = isotope.element;
