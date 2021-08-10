@@ -210,7 +210,8 @@
 
     $(window).on('resize', function() {
         var ww = $(window).width();
-        //console.log('khanh');
+
+        $("div.swiper-pagination").css('display', 'contents');
         if (ww < 375) {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
@@ -241,7 +242,6 @@
                     clickable: true,
                 },
             });
-            // $("div.swiper-container").removeClass("swiper-container-horizontal").addClass("swiper-container-vertical")
         } else if (ww < 752) {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
@@ -251,7 +251,7 @@
                     clickable: true,
                 },
             });
-            // $("div.swiper-pagination").css('display', 'none');
+            $("div.swiper-pagination").css('display', 'none');
         } else {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 5,
