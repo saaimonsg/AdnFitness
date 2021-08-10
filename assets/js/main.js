@@ -210,9 +210,9 @@
 
     $(window).on('resize', function() {
         var ww = $(window).width();
-
+        console.log('khanh');
         if (ww < 1200) {
-            console.log('khanh');
+
 
         } else {
             $('.page-wrap').removeClass('active');
