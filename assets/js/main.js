@@ -204,6 +204,7 @@
         }
     });
 
+
     $('.navbar-toggle').on('click', function() {
         $('.page-wrap').toggleClass('active');
     });
@@ -212,7 +213,6 @@
         var ww = $(window).width();
         console.log('khanh');
         if (ww < 1200) {
-
 
         } else {
             $('.page-wrap').removeClass('active');
