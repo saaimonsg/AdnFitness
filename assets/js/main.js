@@ -224,7 +224,7 @@
         } else
         if (ww < 370) {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 5,
                 pagination: {
                     el: ".swiper-pagination",
