@@ -212,7 +212,6 @@
         var ww = $(window).width();
         //console.log('khanh');
         if (ww < 285) {
-            console.log(360)
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 5,
@@ -223,8 +222,7 @@
             });
             $("div.swiper-pagination").css('display', 'none');
         } else
-        if (ww < 362) {
-            console.log(360)
+        if (ww < 370) {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 2,
                 spaceBetween: 5,
@@ -245,7 +243,6 @@
             });
             // $("div.swiper-container").removeClass("swiper-container-horizontal").addClass("swiper-container-vertical")
         } else if (ww < 752) {
-            console.log(360)
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
                 spaceBetween: 5,
