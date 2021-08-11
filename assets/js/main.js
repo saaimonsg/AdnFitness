@@ -242,7 +242,9 @@
                     clickable: true,
                 },
             });
-        } else if (ww < 752) {
+
+            $("div.swiper-pagination").css('display', 'none');
+        } else if (ww < 766) {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 3,
                 spaceBetween: 5,
@@ -252,9 +254,19 @@
                 },
             });
             $("div.swiper-pagination").css('display', 'none');
+        } else if (ww < 992) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            $("div.swiper-pagination").css('display', 'none');
         } else {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 5,
                 pagination: {
                     el: ".swiper-pagination",
