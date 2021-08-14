@@ -120,7 +120,8 @@
                 pagination: self.find('.swiper-pagination-custom'),
                 nextButton: self.find('.swiper-button-next-custom'),
                 prevButton: self.find('.swiper-button-prev-custom'),
-                spaceBetween: 30
+                spaceBetween: 30,
+                autoplay: 6000
             },
             options = $.extend(optDefault, optData);
         wrapper.children().wrap('<div class="swiper-slide"></div>');
@@ -138,9 +139,10 @@
                         touchRatio: 0.3,
                         slideToClickedSlide: true,
                         pagination: selector.find('.swiper-pagination-custom'),
-                        nextButton: selector.find('.swiper-button-next-custom'),
-                        prevButton: selector.find('.swiper-button-prev-custom'),
+                        nextButton: selector.find('.swiper-button-next'),
+                        prevButton: selector.find('.swiper-button-prev'),
                     },
+
                     optionsThumbs = $.extend(optDefaultThumbs, optDataThumbs);
                 wrapperThumbs.children().wrap('<div class="swiper-slide"></div>');
                 var swiperThumbs = new Swiper(selector, optionsThumbs);
