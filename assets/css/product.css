@@ -215,7 +215,9 @@
 .wrapper .inside .contents p {
     font-size: 13px;
 }
-
+.cls-1 {
+    fill: var(--bg-dark-neutral);
+}
 @media (max-width: 1132px) {
     .wrapper {
         width: 200px;
