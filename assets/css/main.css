@@ -1,8 +1,7 @@
 /*------------------------------------------------------------------------
-# Raising Template 1.0 - Feb 8, 2018
+
 # ------------------------------------------------------------------------
-# Designed & coded by Awe7
-# Websites:  http://www.awe7.com -  Email: info@awe7.com
+
 --------------------------------------------------------------------------
 
 	1. base
@@ -55,7 +54,9 @@
 	48. Custom
 
 --------------------------------------------------------------------------*/
-
+:root{
+    --bg-dark-neutral: #161819;
+}
 
 
 
@@ -3540,6 +3541,8 @@ mark, .mark {
 }
 
 .hero__wrapper {
+    
+    background-color: var(--bg-dark-neutral);
     padding: 100px 0;
     background-position: center center;
     background-repeat: no-repeat;
