@@ -121,7 +121,8 @@
                 nextButton: self.find('.swiper-button-next-custom'),
                 prevButton: self.find('.swiper-button-prev-custom'),
                 spaceBetween: 30,
-                autoplay: 6000
+                autoplay: 6000,
+                autoHeight: true
             },
             options = $.extend(optDefault, optData);
         wrapper.children().wrap('<div class="swiper-slide"></div>');
