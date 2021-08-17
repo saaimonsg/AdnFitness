@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html class="" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ADN-Fitness</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Venta de Suplementos Dietarios y
+    Entrenamiento Personalizado! " />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="nopagereadaloud" />
+    <meta name="google-site-verification" content="cwvmEJc2N30lE_1c-7Z4AT8Q2ogBrno7nl_yRUbwhUE" />
+    <div id="css">
+        <link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600|Playfair+Display:400i">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="assets/css/product.css" />
+    </div>
+    <div id="js">
+        <!-- BABEL -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <!-- REACT -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0/umd/react.production.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0/umd/react-dom.production.min.js"></script>
+        <!-- Axios -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    </div>
+</head>
+
+<body>
+
+    <!-- preload -->
+    <div class="preload" id="preload">
+        <div class="cssload-spin-box"></div>
+    </div>
+    <!-- End / preload -->
+    <div class="page-wrap">
+
+        <!-- header -->
+        <header class="header header-fixheight header--fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="assets/img/logo_white.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- raising-nav -->
+                    <nav class="raising-nav">
+                        <!-- raising-navbar -->
+                        <ul class="raising-menu">
+                            <li>
+                                <a href="/">ADN-FITNESS</a>
+                            </li>
+                            <!-- <li>
+                            <a href="/nosotros">NOSOTROS</a>
+                        </li> -->
+                            <li>
+                                <a href="/galeria.html">GALERIA</a>
+                            </li>
+                            <li>
+                                <a href="/tienda.html">TIENDA</a>
+                            </li>
+                            <!-- <li>
+                            <a href="/equipo">EQUIPO</a>
+                        </li>
+                        <li>
+                            <a href="/contacto">CONTACTO</a>
+                        </li> -->
+                        </ul>
+                        <!-- raising-navbar -->
+                        <div class="navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </nav>
+                    <!-- End / raising-nav -->
+                    <div class="btn-right">
+                        <div class="search-btn"><i class="fa fa-search"></i></div>
+                    </div>
+                    <div class="searchbar">
+                        <div class="searchbar__group"><span class="searchbar__addon"><i class="fa fa-search"></i></span>
+                            <input class="searchbar__input" type="text" name="search" value=""
+                                placeholder="Search" /><span class="searchbar__close"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End / header -->
+
+        <div class="md-content">
+            <div id="tienda-content"></div>
+            <!-- PRODUCTO-1 -->
+            <div id="producto-2">
+                <!-- swiper -->
+                <div
+                    class="swiper-container mySwiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                    <h1 class="container">Productos</h1>
+                    <div class="swiper-wrapper" id="swiper-wrapper-915645fbc8510385" aria-live="polite">
+                        <!-- START-CARD -->
+                        <div class="swiper-slide">
+                            <div class="wrapper" th:id="${prod.getId().toString()+'_'+prod.getNombre.replace(' ','-')}">
+                                <div class="container-p">
+                                    <div class="top"
+                                        th:style="'background-image:url(\'assets/img/suplementos/' + ${prod.getImg()} + '\');'">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="left">
+                                            <div class="details">
+                                                <h3 th:text="${prod.getNombre()}">Creatina DNA - BSN</h3>
+                                                <p th:text="'$'+${prod.getPrice()}">$000</p>
+                                            </div>
+                                            <div class="buy"><a
+                                                    th:href="'https://api.whatsapp.com/send?phone=5493416858844&text=Hola!!%20Quer%C3%ADa%20saber%20mas%20acerca%20del%20producto%3A%20'+${prod.getNombre.replace(' ','-')}+'%20$'+${prod.getPrice()}+'.%20Muchas%20Gracias!!%0Atienda#'+${prod.getNombre.replace(' ','-')}+'?'"><i
+                                                        class="material-icons">add_shopping_cart</i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END-CARD -->
+                        </div>
+                        <div class="swiper-slide">
+
+                            <!-- START-CARD -->
+                            <div class="wrapper" th:id="${prod.getId().toString()+'_'+prod.getNombre.replace(' ','-')}">
+                                <div class="container-p">
+                                    <div class="top"
+                                        th:style="'background-image:url(\'assets/img/suplementos/' + ${prod.getImg()} + '\');'">
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="left">
+                                            <div class="details">
+                                                <h3 th:text="${prod.getNombre()}">Creatina DNA - BSN</h3>
+                                                <p th:text="'$'+${prod.getPrice()}">$000</p>
+                                            </div>
+                                            <div class="buy"><a
+                                                    th:href="'https://api.whatsapp.com/send?phone=5493416858844&text=Hola!!%20Quer%C3%ADa%20saber%20mas%20acerca%20del%20producto%3A%20'+${prod.getNombre.replace(' ','-')}+'%20$'+${prod.getPrice()}+'.%20Muchas%20Gracias!!%0Atienda#'+${prod.getNombre.replace(' ','-')}+'?'"><i
+                                                        class="material-icons">add_shopping_cart</i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END-CARD -->
+                        </div>
+                    </div>
+                    <!-- END .swiper-wrapper -->
+                </div>
+                <!-- END .swiper-container -->
+            </div>
+            <!-- END #producto-1 -->
+        </div>
+
+
+
+        <!-- footer-01 -->
+        <footer class="footer-01 md-skin-dark">
+            <div class="footer-01__widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 ">
+
+                            <!-- widget -->
+                            <section class="widget">
+
+                                <!-- sec-title -->
+                                <div class="sec-title">
+                                    <h2 class="sec-title__title">about us</h2><span class="sec-title__divider"></span>
+                                </div>
+                                <!-- End / sec-title -->
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis a rerum ratione
+                                    aliquam
+                                    placeat labore nemo itaque voluptas laudantium consequuntur ut quam, aperiam harum
+                                    ipsam?
+                                </p>
+                            </section>
+                            <!-- End / widget -->
+
+                        </div>
+                        <div class="col-md-6 col-lg-3 ">
+
+                            <!-- widget -->
+                            <section class="widget">
+
+                                <!-- sec-title -->
+                                <div class="sec-title">
+                                    <h2 class="sec-title__title">tag</h2><span class="sec-title__divider"></span>
+                                </div>
+                                <!-- End / sec-title -->
+
+
+                                <!-- widget-tag -->
+                                <div class="widget-tag"><a href="#">Dress</a><a href="#">Mini</a><a href="#">Skate
+                                        Animal</a><a href="#">Lorem Ipsum</a><a href="#">Litterature</a><a
+                                        href="#">Foreign</a><a href="#">Dessert</a><a href="#">Food</a><a
+                                        href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a
+                                        href="#">Litterature</a>
+                                    <a href="#">Food</a>
+                                </div>
+                                <!-- End /  widget-tag -->
+
+                            </section>
+                            <!-- End / widget -->
+
+                        </div>
+                        <div class="col-md-6 col-lg-3 ">
+
+                            <!-- widget -->
+                            <section class="widget">
+
+                                <!-- sec-title -->
+                                <div class="sec-title">
+                                    <h2 class="sec-title__title">flickr widget</h2><span
+                                        class="sec-title__divider"></span>
+                                </div>
+                                <!-- End / sec-title -->
+
+
+                                <!-- widget-gallery -->
+                                <div class="widget-gallery">
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                    <div class="widget-gallery__item">
+                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
+                                                src="assets/img/400x400.png" alt="" /></a>
+                                    </div>
+                                </div>
+                                <!-- End /  widget-gallery -->
+
+                            </section>
+                            <!-- End / widget -->
+
+                        </div>
+                        <div class="col-lg-3 ">
+
+                            <!-- widget -->
+                            <section class="widget">
+
+                                <!-- sec-title -->
+                                <div class="sec-title">
+                                    <h2 class="sec-title__title">working hours</h2><span
+                                        class="sec-title__divider"></span>
+                                </div>
+                                <!-- End / sec-title -->
+
+                                <p> Lorem ipsum dolor sit amet, consectetur</p>
+
+                                <!--  -->
+                                <div>
+                                    <div class="widget-contact__item"><span class="widget-contact__title">Cel:</span>
+                                        <p class="widget-contact__text">+5493416858844</p>
+                                    </div>
+                                    <div class="widget-contact__item"><span
+                                            class="widget-contact__title">Instagram</span>
+                                        <p class="widget-contact__text"><a
+                                                href="https://www.instagram.com/adnfitnessrosario/">@adnfitnessrosario</a>
+                                        </p>
+                                    </div>
+                                    <div class="widget-contact__item"><span class="widget-contact__title">email:</span>
+                                        <p class="widget-contact__text"><a href="#">info@mail.com</a></p>
+                                    </div>
+                                    <div class="widget-contact__item"><span class="widget-contact__title">Working
+                                            Hours</span>
+                                        <p class="widget-contact__text">Lun - Vie: 9:00 - 18:00</p>
+                                    </div>
+                                </div>
+                                <!-- End /   -->
+
+                            </section>
+                            <!-- End / widget -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyright-01 -->
+            <div class="copyright-01 md-text-center">
+                <div class="container">
+                    <p class="copyright-01__copy">2021 &copy; Copyright Phoenos. All rights Reserved.</p>
+                </div>
+            </div>
+            <!-- End / copyright-01 -->
+        </footer>
+        <!-- End / footer-01 -->
+    </div>
+    <!-- Vendors-->
+    <script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- App-->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/babel" src="assets/js/tienda/index.js"></script>
+
+</body>
+
+</html>
