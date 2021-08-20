@@ -208,6 +208,8 @@
 
 
     $('.navbar-toggle').on('click', function() {
+        
+        $('.raising-menu').toggleClass('active');
         $('.page-wrap').toggleClass('active');
     });
 

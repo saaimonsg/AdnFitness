@@ -1,54 +1,54 @@
 [
-    {
-        "id": 1,
-        "categoria": "Aminoácidos"
-    },
-    {
-        "id": 2,
-        "categoria": "Ganador de Peso"
-    },
-    {
-        "id": 3,
-        "categoria": "Creatina"
-    },
-    {
-        "id": 4,
-        "categoria": "Quemador de Grasa"
-    },
-    {
-        "id": 5,
-        "categoria": "Proteína"
-    },
-    {
-        "id": 6,
-        "categoria": "Glutamina"
-    },
-    {
-        "id": 7,
-        "categoria": "Óxido Nítrico"
-    },
-    {
-        "id": 8,
-        "categoria": "Energizante"
-    },
-    {
-        "id": 9,
-        "categoria": "Multivitaminico"
-    },
-    {
-        "id": 10,
-        "categoria": "Spirulina"
-    },
-    {
-        "id": 11,
-        "categoria": "Taurina"
-    },
-    {
-        "id": 12,
-        "categoria": "Pre-Entreno"
-    },
-    {
-        "id": 13,
-        "categoria": "Post-Entreno"
-    }
+  {
+    "id": 1,
+    "categoria": "Aminoácidos"
+  },
+  {
+    "id": 2,
+    "categoria": "Ganador de Peso"
+  },
+  {
+    "id": 3,
+    "categoria": "Creatina"
+  },
+  {
+    "id": 4,
+    "categoria": "Quemador de Grasa"
+  },
+  {
+    "id": 5,
+    "categoria": "Proteína"
+  },
+  {
+    "id": 6,
+    "categoria": "Glutamina"
+  },
+  {
+    "id": 7,
+    "categoria": "Óxido Nítrico"
+  },
+  {
+    "id": 8,
+    "categoria": "Energizante"
+  },
+  {
+    "id": 9,
+    "categoria": "Multivitaminico"
+  },
+  {
+    "id": 10,
+    "categoria": "Spirulina"
+  },
+  {
+    "id": 11,
+    "categoria": "Taurina"
+  },
+  {
+    "id": 12,
+    "categoria": "Pre-Entreno"
+  },
+  {
+    "id": 13,
+    "categoria": "Post-Entreno"
+  }
 ]
