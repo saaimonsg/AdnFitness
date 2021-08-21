@@ -58,6 +58,7 @@
 /* card */
 
 .plan {
+    transition: box-shadow 0.5s, transform 0.5s;
     position: relative;
     border: 0px solid transparent;
     border-radius: 12px;
@@ -121,6 +122,11 @@
 
 /** ANIMATIONS - TRANSITIONS
 -----------------------*/
+
+.plan:hover {
+    /*transform: scale(1);*/
+    box-shadow: 5px 2px 40px rgba(255, 255, 255, 0.88);
+}
 
 .marketing .plan .plan-h.bronce,
 .marketing .plan .plan-h.plata,
@@ -199,16 +205,5 @@
     }
     100% {
         opacity: 1;
-    }
-}
-
-
-/** RESIZE
--------------------*/
-
-@media(max-width: 1120px) {
-    .marketing {
-        width: 320px;
-        height: 320px;
     }
 }
