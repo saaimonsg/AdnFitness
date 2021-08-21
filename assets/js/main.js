@@ -152,9 +152,17 @@
             }
 
         }
+
         thumbnails(self.next('.swiper-thumbnails'));
     });
-
+    var planesSwiper = new Swiper(".planSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
     /**
      * Header
      */
@@ -258,14 +266,7 @@
                     clickable: true,
                 },
             });
-            var planesSwiper = new Swiper(".planSwiper", {
-                slidesPerView: 1,
-                spaceBetween: 0,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
+
             $("div.swiper-pagination").css('display', 'none');
         } else if (ww < 992) {
             var swiper = new Swiper(".mySwiper", {
@@ -282,6 +283,14 @@
             var planesSwiper = new Swiper(".planSwiper", {
                 slidesPerView: 2,
                 spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            var planesSwiper = new Swiper(".planSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
