@@ -1,0 +1,214 @@
+/* GENERAL CONTENT
+-------------------------------------------------- */
+
+.plan hr,
+.plan-h .nombre,
+.plan-h .precio {
+    padding: initial;
+    margin: auto;
+}
+
+.myCustomHover {
+    position: absolute;
+    background-color: var(--bg-dark-neutral);
+    height: 400px;
+    width: 100%;
+}
+
+.planSwiper {
+    position: relative;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.marketing {
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    /* background: rgba(255, 255, 255, 0.57); */
+    margin: auto;
+    /* overflow: hidden; */
+    /* border-radius: 10px 10px 10px 10px; */
+    /* box-shadow: 0; */
+    /* transform: scale(0.95); */
+    /* transition: box-shadow 0.5s, transform 0.5s; */
+}
+
+.marketing .plan {
+    height: inherit;
+    width: inherit;
+    color: black;
+    background-color: white;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.marketing .list-item-plan {
+    background-color: white;
+    color: black;
+}
+
+
+/* PLAN CONTENT
+-------------------------------------------------- */
+
+
+/* card */
+
+.plan {
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 12px;
+}
+
+
+/* header*/
+
+.plan-h {
+    border: 0px solid transparent;
+    border-radius: 2px;
+}
+
+.plan-h .img-circle {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 140px;
+    width: 110px;
+}
+
+.plan-h .nombre,
+.plan-h .precio {
+    font-size: 24px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em, black 0.1em 0.1em 0.2em, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: normal;
+}
+
+.plan hr {
+    border-top: 0px;
+}
+
+.bronce {
+    background-image: url("../img/planes/a.jpg");
+    background-position: 0px -180px;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+}
+
+.plata {
+    background-image: url("../img/planes/b.jpg");
+    background-position: 0px -300px;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+}
+
+.oro {
+    background-image: url("../img/planes/c.jpg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+}
+
+.plan .plan-bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+
+/** ANIMATIONS - TRANSITIONS
+-----------------------*/
+
+.marketing .plan .plan-h.bronce,
+.marketing .plan .plan-h.plata,
+.marketing .plan .plan-h.oro {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.marketing .plan .list-item-plan {
+    animation: resizeItem 2s;
+    -webkit-animation: resizeItem 2s;
+    -moz-animation: resizeItem 2s;
+    -o-animation: resizeItem 2s;
+    -ms-animation: resizeItem 2s;
+}
+
+.marketing .plan .plan-bottom {
+    animation: fadeIn 7s;
+    -webkit-animation: fadeIn 7;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+}
+
+@keyframes resizeItem {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, -0%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/** RESIZE
+-------------------*/
+
+@media(max-width: 1120px) {
+    .marketing {
+        width: 320px;
+        height: 320px;
+    }
+}
