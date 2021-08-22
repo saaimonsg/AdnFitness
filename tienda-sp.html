@@ -20,8 +20,7 @@
         <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
         <link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
         <link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
-        <link rel="stylesheet" type="text/css"
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600|Playfair+Display:400i">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600|Playfair+Display:400i">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <!-- Swiper -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -97,8 +96,7 @@
                     </div>
                     <div class="searchbar">
                         <div class="searchbar__group"><span class="searchbar__addon"><i class="fa fa-search"></i></span>
-                            <input class="searchbar__input" type="text" name="search" value=""
-                                placeholder="Search" /><span class="searchbar__close"></span>
+                            <input class="searchbar__input" type="text" name="search" value="" placeholder="Search" /><span class="searchbar__close"></span>
                         </div>
                     </div>
                 </div>
@@ -111,16 +109,14 @@
             <!-- PRODUCTO-1 -->
             <div id="producto-2">
                 <!-- swiper -->
-                <div
-                    class="swiper-container mySwiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                <div class="swiper-container mySwiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                     <h1 class="container">Productos</h1>
                     <div class="swiper-wrapper" id="swiper-wrapper-915645fbc8510385" aria-live="polite">
                         <!-- START-CARD -->
                         <div class="swiper-slide">
                             <div class="wrapper" th:id="${prod.getId().toString()+'_'+prod.getNombre.replace(' ','-')}">
                                 <div class="container-p">
-                                    <div class="top"
-                                        th:style="'background-image:url(\'assets/img/suplementos/' + ${prod.getImg()} + '\');'">
+                                    <div class="top" th:style="'background-image:url(\'assets/img/suplementos/' + ${prod.getImg()} + '\');'">
                                     </div>
                                     <div class="bottom">
                                         <div class="left">
@@ -128,9 +124,9 @@
                                                 <h3 th:text="${prod.getNombre()}">Creatina DNA - BSN</h3>
                                                 <p th:text="'$'+${prod.getPrice()}">$000</p>
                                             </div>
-                                            <div class="buy"><a
-                                                    th:href="'https://api.whatsapp.com/send?phone=5493416858844&text=Hola!!%20Quer%C3%ADa%20saber%20mas%20acerca%20del%20producto%3A%20'+${prod.getNombre.replace(' ','-')}+'%20$'+${prod.getPrice()}+'.%20Muchas%20Gracias!!%0Atienda#'+${prod.getNombre.replace(' ','-')}+'?'"><i
-                                                        class="material-icons">add_shopping_cart</i></a></div>
+                                            <div class="buy">
+                                                <a th:href="'https://api.whatsapp.com/send?phone=5493416858844&text=Hola!!%20Quer%C3%ADa%20saber%20mas%20acerca%20del%20producto%3A%20'+${prod.getNombre.replace(' ','-')}+'%20$'+${prod.getPrice()}+'.%20Muchas%20Gracias!!%0Atienda#'+${prod.getNombre.replace(' ','-')}+'?'"><i class="material-icons">add_shopping_cart</i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -142,8 +138,7 @@
                             <!-- START-CARD -->
                             <div class="wrapper" th:id="${prod.getId().toString()+'_'+prod.getNombre.replace(' ','-')}">
                                 <div class="container-p">
-                                    <div class="top"
-                                        th:style="'background-image:url(\'assets/img/suplementos/' + ${prod.getImg()} + '\');'">
+                                    <div class="top" th:style="'background-image:url(\'assets/img/suplementos/' + ${prod.getImg()} + '\');'">
                                     </div>
                                     <div class="bottom">
                                         <div class="left">
@@ -151,9 +146,9 @@
                                                 <h3 th:text="${prod.getNombre()}">Creatina DNA - BSN</h3>
                                                 <p th:text="'$'+${prod.getPrice()}">$000</p>
                                             </div>
-                                            <div class="buy"><a
-                                                    th:href="'https://api.whatsapp.com/send?phone=5493416858844&text=Hola!!%20Quer%C3%ADa%20saber%20mas%20acerca%20del%20producto%3A%20'+${prod.getNombre.replace(' ','-')}+'%20$'+${prod.getPrice()}+'.%20Muchas%20Gracias!!%0Atienda#'+${prod.getNombre.replace(' ','-')}+'?'"><i
-                                                        class="material-icons">add_shopping_cart</i></a></div>
+                                            <div class="buy">
+                                                <a th:href="'https://api.whatsapp.com/send?phone=5493416858844&text=Hola!!%20Quer%C3%ADa%20saber%20mas%20acerca%20del%20producto%3A%20'+${prod.getNombre.replace(' ','-')}+'%20$'+${prod.getPrice()}+'.%20Muchas%20Gracias!!%0Atienda#'+${prod.getNombre.replace(' ','-')}+'?'"><i class="material-icons">add_shopping_cart</i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -175,141 +170,119 @@
             <div class="footer-01__widget">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 ">
-
+                        <div class="col-lg-6 ">
                             <!-- widget -->
                             <section class="widget">
-
                                 <!-- sec-title -->
                                 <div class="sec-title">
                                     <h2 class="sec-title__title">about us</h2><span class="sec-title__divider"></span>
                                 </div>
                                 <!-- End / sec-title -->
-
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis a rerum ratione
-                                    aliquam
-                                    placeat labore nemo itaque voluptas laudantium consequuntur ut quam, aperiam harum
-                                    ipsam?
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis a rerum ratione aliquam placeat labore nemo itaque voluptas laudantium consequuntur ut quam, aperiam harum ipsam?
                                 </p>
                             </section>
                             <!-- End / widget -->
 
                         </div>
-                        <div class="col-md-6 col-lg-3 ">
+                        <!-- <div class="col-md-6 col-lg-3 "> -->
+
+                        <!-- widget -->
+                        <!-- <section class="widget"> -->
+
+                        <!-- sec-title -->
+                        <!-- <div class="sec-title"> -->
+                        <!-- <h2 class="sec-title__title">tag</h2><span class="sec-title__divider"></span> -->
+                        <!-- </div> -->
+                        <!-- End / sec-title -->
+
+
+                        <!-- widget-tag -->
+                        <!-- <div class="widget-tag"><a href="#">Dress</a><a href="#">Mini</a><a href="#">Skate -->
+                        <!-- Animal</a><a href="#">Lorem Ipsum</a><a href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a href="#">Food</a><a href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a href="#">Litterature</a> -->
+                        <!-- <a href="#">Food</a> -->
+                        <!-- </div> -->
+                        <!-- End /  widget-tag -->
+
+                        <!-- </section> -->
+                        <!-- End / widget -->
+
+                        <!-- </div> -->
+                        <!-- <div class="col-md-6 col-lg-3 "> -->
+
+                        <!-- widget -->
+                        <!-- <section class="widget"> -->
+
+                        <!-- sec-title -->
+                        <!-- <div class="sec-title">
+                                <h2 class="sec-title__title">flickr widget</h2><span class="sec-title__divider"></span>
+                            </div> -->
+                        <!-- End / sec-title -->
+
+
+                        <!-- widget-gallery -->
+                        <!-- <div class="widget-gallery">
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                                <div class="widget-gallery__item">
+                                    <a href="#" style="background-image: url('assets/img/400x400.png');"><img src="assets/img/400x400.png" alt=""></a>
+                                </div>
+                            </div> -->
+                        <!-- End /  widget-gallery -->
+
+                        <!-- </section> -->
+                        <!-- End / widget -->
+
+                        <!-- </div> -->
+                        <div class="col-lg-6 ">
 
                             <!-- widget -->
                             <section class="widget">
 
                                 <!-- sec-title -->
                                 <div class="sec-title">
-                                    <h2 class="sec-title__title">tag</h2><span class="sec-title__divider"></span>
+                                    <h1 class="sec-title__title">Horarios de atencion y contacto</h1><span class="sec-title__divider"></span>
                                 </div>
                                 <!-- End / sec-title -->
 
-
-                                <!-- widget-tag -->
-                                <div class="widget-tag"><a href="#">Dress</a><a href="#">Mini</a><a href="#">Skate
-                                        Animal</a><a href="#">Lorem Ipsum</a><a href="#">Litterature</a><a
-                                        href="#">Foreign</a><a href="#">Dessert</a><a href="#">Food</a><a
-                                        href="#">Litterature</a><a href="#">Foreign</a><a href="#">Dessert</a><a
-                                        href="#">Litterature</a>
-                                    <a href="#">Food</a>
-                                </div>
-                                <!-- End /  widget-tag -->
-
-                            </section>
-                            <!-- End / widget -->
-
-                        </div>
-                        <div class="col-md-6 col-lg-3 ">
-
-                            <!-- widget -->
-                            <section class="widget">
-
-                                <!-- sec-title -->
-                                <div class="sec-title">
-                                    <h2 class="sec-title__title">flickr widget</h2><span
-                                        class="sec-title__divider"></span>
-                                </div>
-                                <!-- End / sec-title -->
-
-
-                                <!-- widget-gallery -->
-                                <div class="widget-gallery">
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                    <div class="widget-gallery__item">
-                                        <a href="#" style="background-image: url('assets/img/400x400.png');"><img
-                                                src="assets/img/400x400.png" alt="" /></a>
-                                    </div>
-                                </div>
-                                <!-- End /  widget-gallery -->
-
-                            </section>
-                            <!-- End / widget -->
-
-                        </div>
-                        <div class="col-lg-3 ">
-
-                            <!-- widget -->
-                            <section class="widget">
-
-                                <!-- sec-title -->
-                                <div class="sec-title">
-                                    <h2 class="sec-title__title">working hours</h2><span
-                                        class="sec-title__divider"></span>
-                                </div>
-                                <!-- End / sec-title -->
-
-                                <p> Lorem ipsum dolor sit amet, consectetur</p>
+                                <!-- <p> Lorem ipsum dolor sit amet, consectetur</p> -->
 
                                 <!--  -->
                                 <div>
                                     <div class="widget-contact__item"><span class="widget-contact__title">Cel:</span>
-                                        <p class="widget-contact__text">+5493416858844</p>
+                                        <p class="widget-contact__text"><a href="tel://5493416858844">+5493416858844</a></p>
                                     </div>
-                                    <div class="widget-contact__item"><span
-                                            class="widget-contact__title">Instagram</span>
-                                        <p class="widget-contact__text"><a
-                                                href="https://www.instagram.com/adnfitnessrosario/">@adnfitnessrosario</a>
+                                    <div class="widget-contact__item"><span class="widget-contact__title">Instagram</span>
+                                        <p class="widget-contact__text"><a href="https://www.instagram.com/adnfitnessrosario/">@adnfitnessrosario</a>
                                         </p>
                                     </div>
                                     <div class="widget-contact__item"><span class="widget-contact__title">email:</span>
-                                        <p class="widget-contact__text"><a href="#">info@mail.com</a></p>
+                                        <p class="widget-contact__text"><a href="mailto:adnfitnessok@gmail.com?Subject=Consulta%20Index:%20">adnfitnessok@gmail.com</a></p>
                                     </div>
                                     <div class="widget-contact__item"><span class="widget-contact__title">Working
-                                            Hours</span>
-                                        <p class="widget-contact__text">Lun - Vie: 9:00 - 18:00</p>
+                                        Hours</span>
+                                        <p class="widget-contact__text">Lun - Vie: 9:00 - 21:00</p>
                                     </div>
                                 </div>
                                 <!-- End /   -->
@@ -325,10 +298,11 @@
             <!-- copyright-01 -->
             <div class="copyright-01 md-text-center">
                 <div class="container">
-                    <p class="copyright-01__copy">2021 &copy; Copyright Phoenos. All rights Reserved.</p>
+                    <p class="copyright-01__copy">2021 © Copyright Phoenos. All rights Reserved.</p>
                 </div>
             </div>
             <!-- End / copyright-01 -->
+
         </footer>
         <!-- End / footer-01 -->
     </div>
