@@ -115,13 +115,25 @@
 }
 
 
-/** ANIMATIONS - TRANSITIONS
+/** ANIMATIONS - 
 -----------------------*/
 
 .plan:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.88);
 }
+
+.plan-h:hover {
+    animation: hideOut 7s;
+    -webkit-animation: hideOut 7;
+    -moz-animation: hideOut 7s;
+    -o-animation: hideOut 7s;
+    -ms-animation: hideOut 7s;
+}
+
+
+/** TRANSITIONS
+-----------------------*/
 
 .marketing .plan .plan-h.bronce,
 .marketing .plan .plan-h.plata,
@@ -149,9 +161,18 @@
     -ms-animation: fadeIn 7s;
 }
 
+@keyframes hideOut {
+    0% {
+        background-image: aqua;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
 @keyframes resizeItem {
     0% {
-        transform: translate(0, -100%);
+        transform: translate(0, 100%);
     }
     100% {
         transform: translate(0, -0%);
