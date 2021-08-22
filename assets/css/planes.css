@@ -16,6 +16,7 @@
 }
 
 .planSwiper {
+    margin-top: 15px;
     position: relative;
 }
 
@@ -27,13 +28,7 @@
     margin: auto;
     width: 360px;
     height: 360px;
-    /* background: rgba(255, 255, 255, 0.57); */
     margin: auto;
-    /* overflow: hidden; */
-    /* border-radius: 10px 10px 10px 10px; */
-    /* box-shadow: 0; */
-    /* transform: scale(0.95); */
-    /* transition: box-shadow 0.5s, transform 0.5s; */
 }
 
 .marketing .plan {
@@ -69,7 +64,7 @@
 
 .plan-h {
     border: 0px solid transparent;
-    border-radius: 2px;
+    border-radius: 11px;
 }
 
 .plan-h .img-circle {
@@ -124,8 +119,8 @@
 -----------------------*/
 
 .plan:hover {
-    /*transform: scale(1);*/
-    box-shadow: 5px 2px 40px rgba(255, 255, 255, 0.88);
+    transform: scale(1.01);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.88);
 }
 
 .marketing .plan .plan-h.bronce,
