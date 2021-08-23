@@ -233,13 +233,28 @@
                     clickable: true,
                 },
             });
-
+            var planesSwiper = new Swiper(".planSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
             $("div.swiper-pagination").css('display', 'none');
         } else
         if (ww < 420) {
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 2,
                 spaceBetween: 1,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            var planesSwiper = new Swiper(".planSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 5,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -255,7 +270,14 @@
                     clickable: true,
                 },
             });
-
+            var planesSwiper = new Swiper(".planSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
             $("div.swiper-pagination").css('display', 'none');
         } else if (ww < 766) {
             var swiper = new Swiper(".mySwiper", {
@@ -266,7 +288,14 @@
                     clickable: true,
                 },
             });
-
+            var planesSwiper = new Swiper(".planSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
             $("div.swiper-pagination").css('display', 'none');
         } else if (ww < 992) {
             var swiper = new Swiper(".mySwiper", {
@@ -277,7 +306,14 @@
                     clickable: true,
                 },
             });
-
+            var planesSwiper = new Swiper(".planSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 5,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
             $("div.swiper-pagination").css('display', 'none');
         } else if (ww < 1130) {
             var planesSwiper = new Swiper(".planSwiper", {
