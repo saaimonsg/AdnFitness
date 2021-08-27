@@ -237,35 +237,35 @@
         $("div.swiper-pagination").css('display', 'contents');
         if (ww < 375) {
             var swiper = swiperBuilder(".mySwiper", 1, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 1, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 1, 5);
             $("div.swiper-pagination").css('display', 'none');
         } else
         if (ww < 420) {
             var swiper = swiperBuilder(".mySwiper", 2, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 1, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 1, 5);
             $("div.swiper-pagination").css('display', 'none');
         } else
         if (ww < 640) {
             var swiper = swiperBuilder(".mySwiper", 2, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 1, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 1, 5);
             $("div.swiper-pagination").css('display', 'none');
         } else
         if (ww < 766) {
             var swiper = swiperBuilder(".mySwiper", 3, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 1, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 1, 5);
             $("div.swiper-pagination").css('display', 'none');
         } else
         if (ww < 992) {
             var swiper = swiperBuilder(".mySwiper", 4, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 1, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 1, 5);
             $("div.swiper-pagination").css('display', 'none');
         } else
         if (ww < 1130) {
             var swiper = swiperBuilder(".mySwiper", 4, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 2, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 2, 5);
         } else {
             var swiper = swiperBuilder(".mySwiper", 4, 5, );
-            var planesSwiper = new swiperBuilder(".planSwiper", 3, 5);
+            var planesSwiper = swiperBuilder(".planSwiper", 3, 5);
 
             // $("div.swiper-container").removeClass("swiper-container-vertical").addClass("swiper-container-horizontal")
             $('.page-wrap').removeClass('active');
