@@ -156,14 +156,7 @@
 
         thumbnails(self.next('.swiper-thumbnails'));
     });
-    var planesSwiper = new Swiper(".planSwiper", {
-        slidesPerView: 3,
-        spaceBetween: 5,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+
     /**
      * Header
      */
@@ -226,7 +219,6 @@
             slidesPerView: slides,
             spaceBetween: space,
             pagination: {
-
                 clickable: false,
             },
         });
